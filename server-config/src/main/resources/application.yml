@@ -1,0 +1,16 @@
+server: 
+  port: 8888
+  servlet:
+    context-path: /server-config
+spring:
+  application:
+    name: server-config
+  profiles:
+    active:
+    - native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+          - classpath:apiteste/
