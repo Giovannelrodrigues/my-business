@@ -1,0 +1,13 @@
+server:
+  port: 8761
+  servlet:
+    context-path: /service-registry
+spring:
+  application:
+    name: service-registry
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    
+    
